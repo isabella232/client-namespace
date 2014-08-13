@@ -1,4 +1,4 @@
-package client
+package namespace
 
 import "github.com/statsd/client-interface"
 import "time"
