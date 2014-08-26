@@ -40,6 +40,10 @@ func (c *Client) Histogram(name string, value int) error {
 	return c.c.Histogram(c.prefix+"."+name, value)
 }
 
+func (c *Client) Annotate(name string, value string) error {
+	return c.c.Annotate(name, value)
+}
+
 func (c *Client) Flush() error {
 	return c.c.Flush()
 }
